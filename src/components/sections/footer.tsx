@@ -58,8 +58,8 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" }
+    { icon: Linkedin, href: "https://www.linkedin.com/company/107362958/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/nexin.webautomation/", label: "Instagram" }
   ]
 
   return (
@@ -100,12 +100,12 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">Info@nexin.com</span>
+                <span className="text-sm">john@nexin.agency</span>
               </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
+              {/* <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4 text-purple-400" />
                 <span className="text-sm">+1 (555) 123-4567</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-purple-400" />
                 <span className="text-sm">San Francisco, CA</span>

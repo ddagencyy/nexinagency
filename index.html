@@ -4,34 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexin Creative Agency | World-Class UI/UX Design & Digital Innovation</title>
-    <meta name="description" content="Award-winning creative agency specializing in premium UI/UX design, interactive storytelling, and digital experiences. We craft innovative solutions for forward-thinking brands." />
-    <meta name="author" content="Nexus Creative Agency" />
-    <meta name="keywords" content="creative agency, UI UX design, digital agency, web design, branding, interactive design, premium design" />
-    
-    Canonical URL
-    <link rel="canonical" href="https://nexuscreative.agency" />
-    
+    <meta name="description" content="Nexin is a creative agency specializing in UI/UX design, web development, and digital innovation. We help businesses create beautiful, high-converting digital experiences that drive results.">
+
+    <meta name="author" content="Nexin Creative Agency" />
+    <meta
+      name="keywords"
+      content="UI UX design, web design agency, digital product design, website development, branding agency, website development Services, Ai Automation Systems"
+    />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Nexus Creative Agency | World-Class UI/UX Design & Digital Innovation" />
-    <meta property="og:description" content="Award-winning creative agency specializing in premium UI/UX design, interactive storytelling, and digital experiences." />
-    <meta property="og:image" content="https://nexuscreative.agency/og-image.jpg" />
-    <meta property="og:url" content="https://nexuscreative.agency" />
-    <meta property="og:site_name" content="Nexus Creative Agency" />
-
+    <meta
+      property="og:title"
+      content="Nexin Creative Agency | World-Class UI/UX Design & Development"
+    />
+    <meta
+      property="og:description"
+      content="Nexin is specializing in UI/UX design, web development, App development, Ai Automation System  and digital innovation. We help businesses create beautiful, high-converting digital experiences that drive results."
+    />
+    <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nexin.agency/">
+  <meta property="og:title" content="Nexin - UI/UX Design Web Development Experts">
+  <meta property="og:description" content="Transform your digital presence with world-class UI/UX design and web development services.">
+  <meta property="og:image" content="https://www.nexin.agency/images/social-share.jpg">
+  
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nexus Creative Agency | World-Class UI/UX Design" />
-    <meta name="twitter:description" content="Award-winning creative agency specializing in premium UI/UX design and digital innovation." />
-    <meta name="twitter:image" content="https://nexuscreative.agency/og-image.jpg" />
-    
-    <!-- Preconnect to external domains -->
+    <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nexin - UI/UX Design Web Development Experts">
+  <meta name="twitter:description" content="Transform your digital presence with world-class UI/UX design and web development services.">
+  
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
 
   <body class="dark">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Optional redirect fix (safe to keep) -->
+    <script type="text/javascript">
+      (function () {
+        var redirect = window.location.search.match(/redirect=([^&]+)/);
+        if (redirect) {
+          var target = decodeURIComponent(redirect[1]);
+          window.history.replaceState(null, null, target);
+        }
+      })();
+    </script>
+
+    <!-- ✅ Correct relative path -->
+    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

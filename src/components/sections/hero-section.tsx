@@ -54,22 +54,28 @@ export function HeroSection() {
           <Button 
             size="lg" 
             className="w-full sm:w-auto bg-white text-primary hover:bg-white/95 hover:shadow-xl hover:shadow-white/25 hover:scale-105 text-sm md:text-base px-5 md:px-6 py-2 md:py-3 transition-all duration-300 group font-mono tracking-wide relative overflow-hidden"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
           >
             <span className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
             <span className="relative z-10">START PROJECT</span>
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 group-hover:scale-110 transition-all duration-300 relative z-10" />
           </Button>
           
-          <Button 
-            variant="ghost" 
-            size="lg" 
-            className="w-full sm:w-auto text-white border border-white/20 hover:bg-white/15 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 hover:scale-105 text-sm md:text-base px-5 md:px-6 py-2 md:py-3 group font-mono tracking-wide transition-all duration-300 relative overflow-hidden"
-          >
-            <span className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></span>
-            <Play className="mr-2 w-4 h-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10" />
-            <span className="relative z-10">WATCH REEL</span>
-          </Button>
+          <a
+  href="https://www.instagram.com/nexin.webautomation/" 
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="ghost"
+    size="lg"
+    className="w-full sm:w-auto text-white border border-white/20 hover:bg-white/15 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 hover:scale-105 text-sm md:text-base px-5 md:px-6 py-2 md:py-3 group font-mono tracking-wide transition-all duration-300 relative overflow-hidden"
+  >
+    <span className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></span>
+    <Play className="mr-2 w-4 h-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10" />
+    <span className="relative z-10">WATCH REEL</span>
+  </Button>
+</a>
+
         </div>
         
         {/* Scroll Indicator */}
