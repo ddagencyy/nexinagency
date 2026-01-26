@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { LoadingScreen } from "@/components/loading-screen";
+// import { LoadingScreen } from "@/components/loading-screen"; // Removed import
 import Index from "./pages/Index";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
@@ -12,12 +11,15 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // Removed isLoading state
+  // const [isLoading, setIsLoading] = useState(true);
 
-  if (isLoading) {
-    return <LoadingScreen onComplete={() => setIsLoading(false)} />;
-  }
+  // Removed conditional return block
+  // if (isLoading) {
+  //   return <LoadingScreen onComplete={() => setIsLoading(false)} />;
+  // }
 
+  // The component now immediately renders the main application structure
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
