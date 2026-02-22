@@ -45,8 +45,7 @@ export function HeroSection() {
         
         <div className="overflow-hidden mb-8 md:mb-12">
           <p className="text-sm md:text-lg lg:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed animate-fade-in font-mono" style={{ animationDelay: "0.5s" }}>
-            WE CREATE HIGH-CONVERTING WEBSITES, APPS & DIGITAL EXPERIENCES THAT 
-            GENERATE LEADS, BOOST SALES & SCALE YOUR BUSINESS TO NEW HEIGHTS.
+            EXPERT WEB DEVELOPMENT, INTELLIGENT AI AUTOMATION, AND DATA-DRIVEN SEO STRATEGIES THAT DRIVE REAL RESULTS FOR AMBITIOUS BUSINESSES.
           </p>
         </div>
         
@@ -54,10 +53,14 @@ export function HeroSection() {
           <Button 
             size="lg" 
             className="w-full sm:w-auto bg-white text-primary hover:bg-white/95 hover:shadow-xl hover:shadow-white/25 hover:scale-105 text-sm md:text-base px-5 md:px-6 py-2 md:py-3 transition-all duration-300 group font-mono tracking-wide relative overflow-hidden"
-            onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open(
+                  "https://calendly.com/muteebcheema243/30min",
+                  "_blank",
+                  "noopener,noreferrer"
+                )}
           >
             <span className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-            <span className="relative z-10">START PROJECT</span>
+            <span className="relative z-10">Free Session</span>
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 group-hover:scale-110 transition-all duration-300 relative z-10" />
           </Button>
           
@@ -71,8 +74,8 @@ export function HeroSection() {
     className="w-full sm:w-auto text-white border border-white/20 hover:bg-white/15 hover:border-white/40 hover:shadow-lg hover:shadow-white/10 hover:scale-105 text-sm md:text-base px-5 md:px-6 py-2 md:py-3 group font-mono tracking-wide transition-all duration-300 relative overflow-hidden"
   >
     <span className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10 transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-out"></span>
-    <Play className="mr-2 w-4 h-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10" />
-    <span className="relative z-10">WATCH REEL</span>
+    {/* <Play className="mr-2 w-4 h-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300 relative z-10" /> */}
+    <span className="relative z-10">View Our Work</span>
   </Button>
 </a>
 

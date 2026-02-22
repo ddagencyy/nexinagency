@@ -13,10 +13,10 @@ export function AboutSection() {
   })
 
   const stats = [
-    { icon: Users, key: "clients", value: 150, label: "Happy Clients", suffix: "+" },
-    { icon: Award, key: "awards", value: 25, label: "Awards Won", suffix: "+" },
-    { icon: Target, key: "projects", value: 300, label: "Projects Delivered", suffix: "+" },
-    { icon: TrendingUp, key: "satisfaction", value: 98, label: "Client Satisfaction", suffix: "%" },
+    { icon: Users, key: "clients", value: 50, label: "Happy Clients", suffix: "+" },
+    { icon: Award, key: "awards", value: 15, label: "Awards Won", suffix: "+" },
+    { icon: Target, key: "projects", value: 80, label: "Projects Delivered", suffix: "+" },
+    { icon: TrendingUp, key: "satisfaction", value: 95, label: "Client Satisfaction", suffix: "%" },
   ]
 
   useEffect(() => {
@@ -76,7 +76,7 @@ export function AboutSection() {
             {/* Floating Stats */}
             <div className="absolute -bottom-8 -right-8 glass rounded-2xl p-6 animate-float">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">8+</div>
+                <div className="text-3xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
@@ -89,18 +89,18 @@ export function AboutSection() {
               
               <h2 className="font-display text-display-lg font-bold mb-6">
                 Where Innovation Meets
-                <span className="text-gradient-primary block">Imagination</span>
+                <span className="text-gradient-primary block">EXECUTION</span>
               </h2>
               
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We're not just another agency. We're digital craftspeople who believe 
-                every pixel tells a story and every interaction should feel magical. 
-                Our mission is to bridge the gap between creativity and technology.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">             
+              We're not your typical web development agency. We're digital strategists, technology innovators, 
+              and growth partners who help ambitious businesses transform their online presence and dominate 
+              their markets through intelligent design, powerful automation, and data-driven SEO strategies.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                From startups to Fortune 500 companies, we've helped brands reimagine 
-                their digital presence with award-winning design and cutting-edge innovation.
+                We knew there had to be a better way. By combining modern web development practices, user-centered 
+                design principles, intelligent automation, and proven SEO strategies.
               </p>
             </div>
             
@@ -121,11 +121,11 @@ export function AboutSection() {
             
             {/* Values */}
             <div className="grid grid-cols-2 gap-6">
-              <div>
+              <div className="border-2 border-purple rounded-[10px] p-2">
                 <h3 className="font-semibold text-lg mb-2">Our Mission</h3>
                 <p className="text-muted-foreground">Transform bold ideas into extraordinary digital experiences.</p>
               </div>
-              <div>
+              <div className="border-2 border-purple rounded-[10px] p-2">
                 <h3 className="font-semibold text-lg mb-2">Our Vision</h3>
                 <p className="text-muted-foreground">Shape the future of digital design through innovation.</p>
               </div>

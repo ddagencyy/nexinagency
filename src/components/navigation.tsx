@@ -45,26 +45,25 @@ export function Navigation({ variant = "hero" }: NavigationProps) {
 
   const navItems = [
     { href: "/projects", label: "PORTFOLIO" },
-    { href: "#about", label: "ABOUT" },
-    { href: "#services", label: "SERVICES" },
-    { href: "#contact-form", label: "GET QUOTE" }
+    { href: "/about", label: "ABOUT" },
+    { href: "/services", label: "SERVICES" },
+    { href: "/contact", label: "GET QUOTE" }
   ]
 
   return (
     <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 py-2 px-4 w-full max-w-2xl">
       <div className="w-full">
-        <div className={`glass rounded-lg px-4 py-2 flex items-center justify-between backdrop-blur-md transition-all duration-300 ${
-          isScrolled || variant === "page" 
-            ? "bg-background/20 border-border/20" 
-            : "bg-background/10 border-border/10"
-        }`}>
-          <button 
+        <div className={`glass rounded-lg px-4 py-2 flex items-center justify-between backdrop-blur-md transition-all duration-300 ${isScrolled || variant === "page"
+          ? "bg-background/20 border-border/20"
+          : "bg-background/10 border-border/10"
+          }`}>
+          <button
             onClick={() => handleNavigation('/')}
             className="flex items-center font-mono text-lg font-semibold text-white tracking-wide hover:text-purple-400 transition-colors"
           >
             <img src={nexonLogo} alt="NEXIN" className="h-8 w-auto" />
           </button>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 font-mono text-xs text-white/70">
             {navItems.map((item) => (
@@ -77,14 +76,22 @@ export function Navigation({ variant = "hero" }: NavigationProps) {
               </button>
             ))}
           </div>
-          
+
           <div className="flex items-center gap-3">
-            <Button 
-              variant="outline" 
-              className="hidden md:flex border-purple-400/30 text-white hover:text-purple-400 hover:border-purple-400 font-mono text-xs px-4 py-2 h-9 transition-all duration-500 hover:scale-105 group"
-              onClick={() => handleNavigation('#contact-form')}
+            <Button
+              variant="outline"
+              className="hidden md:flex bg-accent text-black border-2 border-accent font-mono text-xs px-4 py-2 h-10 rounded transition-all duration-300 hover:bg-black hover:text-white hover:border-accent hover:scale-95"
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/muteebcheema243/30min",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
-              <span className="relative z-10 font-semibold transition-colors duration-500 group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-purple-300 group-hover:to-purple-400 group-hover:bg-clip-text group-hover:text-transparent">Become a Client</span>
+              <span className="relative z-10 font-semibold transition-colors duration-500">
+                Book Free Call
+              </span>
             </Button>
             <MobileNav />
           </div>

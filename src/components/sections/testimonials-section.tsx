@@ -5,67 +5,73 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 export function TestimonialsSection() {
   const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Chen",
-      role: "CEO",
-      company: "TechFlow",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      content: "NEXIN transformed our entire digital presence. Their attention to detail and innovative approach resulted in a 150% increase in user engagement. Simply outstanding work.",
-      rating: 5,
-      project: "SaaS Platform Redesign"
-    },
-    {
-      id: 2,
-      name: "Marcus Rodriguez",
-      role: "Founder",
-      company: "Luxe Fashion",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      content: "Working with NEXIN was a game-changer. They didn't just deliver a website; they created an experience that perfectly captures our brand essence. Our sales increased by 200%.",
-      rating: 5,
-      project: "E-commerce Platform"
-    },
-    {
-      id: 3,
-      name: "Emily Watson",
-      role: "Head of Design",
-      company: "InnovateCorp",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      content: "The level of creativity and technical expertise at NEXIN is unmatched. They took our complex requirements and turned them into an elegant, user-friendly solution.",
-      rating: 5,
-      project: "Mobile App Design"
-    },
-    {
-      id: 4,
-      name: "David Park",
-      role: "CMO",
-      company: "FinanceFlow",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      content: "NEXIN delivered beyond our expectations. Their strategic approach to UX design helped us achieve a 40% reduction in customer support tickets while improving user satisfaction.",
-      rating: 5,
-      project: "Fintech Dashboard"
-    },
-    {
-      id: 5,
-      name: "Lisa Thompson",
-      role: "Product Manager",
-      company: "StartupXYZ",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
-      content: "From concept to launch, NEXIN was an incredible partner. Their iterative approach and constant communication made the entire process smooth and enjoyable.",
-      rating: 5,
-      project: "MVP Development"
-    },
-    {
-      id: 6,
-      name: "James Wilson",
-      role: "Creative Director",
-      company: "Brand Studio",
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
-      content: "NEXIN doesn't just follow trends; they set them. Their innovative design solutions helped us win three industry awards this year. Truly exceptional work.",
-      rating: 5,
-      project: "Brand Identity System"
-    }
-  ]
+  {
+    id: 1,
+    name: "Sarah Chen",
+    role: "CEO",
+    company: "TechFlow",
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+    content:
+      "NEXIN completely transformed our SaaS platform with their expert web development and UX/UI design services. Their data-driven approach to conversion rate optimization increased our user engagement by 150% and significantly improved customer retention.",
+    rating: 5,
+    project: "SaaS Web Application Development"
+  },
+  {
+    id: 2,
+    name: "Marcus Rodriguez",
+    role: "Founder",
+    company: "Luxe Fashion",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    content:
+      "Their eCommerce website development and SEO strategy helped us dominate search rankings in our niche. Within six months, our organic traffic doubled and online sales increased by over 200%. Truly a results-driven digital agency.",
+    rating: 5,
+    project: "E-commerce Website & SEO Optimization"
+  },
+  {
+    id: 3,
+    name: "Emily Watson",
+    role: "Head of Design",
+    company: "InnovateCorp",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+    content:
+      "NEXIN delivered a scalable mobile app and custom software solution tailored to our business processes. Their UI/UX expertise and performance optimization significantly improved user experience and operational efficiency.",
+    rating: 5,
+    project: "Custom Software & Mobile App Development"
+  },
+  {
+    id: 4,
+    name: "David Park",
+    role: "CMO",
+    company: "FinanceFlow",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+    content:
+      "Their fintech dashboard redesign combined advanced UX design with intelligent automation. We saw a 40% reduction in support tickets and a major boost in customer satisfaction scores.",
+    rating: 5,
+    project: "Fintech UX Design & Automation"
+  },
+  {
+    id: 5,
+    name: "Lisa Thompson",
+    role: "Product Manager",
+    company: "StartupXYZ",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
+    content:
+      "From MVP development to full-scale product launch, NEXIN provided strategic guidance, agile development, and AI automation integration. Their technical expertise accelerated our time to market and investor readiness.",
+    rating: 5,
+    project: "MVP & AI Automation Development"
+  },
+  {
+    id: 6,
+    name: "James Wilson",
+    role: "Creative Director",
+    company: "Brand Studio",
+    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face",
+    content:
+      "NEXIN’s digital transformation strategy helped reposition our brand with a high-performance website, advanced SEO optimization, and modern brand identity design. The measurable ROI exceeded our expectations.",
+    rating: 5,
+    project: "Digital Transformation & SEO Strategy"
+  }
+]
 
   return (
     <section id="testimonials" className="py-24 relative overflow-hidden">
@@ -137,20 +143,20 @@ export function TestimonialsSection() {
         {/* Stats */}
         <div data-animate-cards className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 text-center">
           <div data-card className="group hover:scale-110 transition-transform duration-300">
-            <div className="text-4xl font-bold text-primary mb-2">98%</div>
-            <div className="text-muted-foreground">Client Satisfaction</div>
-          </div>
-          <div data-card className="group hover:scale-110 transition-transform duration-300">
-            <div className="text-4xl font-bold text-primary mb-2">150+</div>
-            <div className="text-muted-foreground">Happy Clients</div>
-          </div>
-          <div data-card className="group hover:scale-110 transition-transform duration-300">
-            <div className="text-4xl font-bold text-primary mb-2">4.9/5</div>
-            <div className="text-muted-foreground">Average Rating</div>
+            <div className="text-4xl font-bold text-primary mb-2">80+</div>
+            <div className="text-muted-foreground">Projects Completed</div>
           </div>
           <div data-card className="group hover:scale-110 transition-transform duration-300">
             <div className="text-4xl font-bold text-primary mb-2">95%</div>
-            <div className="text-muted-foreground">Repeat Business</div>
+            <div className="text-muted-foreground">Client Satisfaction Rate</div>
+          </div>
+          <div data-card className="group hover:scale-110 transition-transform duration-300">
+            <div className="text-4xl font-bold text-primary mb-2">3.5x</div>
+            <div className="text-muted-foreground">Average ROI</div>
+          </div>
+          <div data-card className="group hover:scale-110 transition-transform duration-300">
+            <div className="text-4xl font-bold text-primary mb-2">50+</div>
+            <div className="text-muted-foreground">5-Star Reviews</div>
           </div>
         </div>
       </div>

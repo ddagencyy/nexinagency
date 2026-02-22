@@ -1,13 +1,13 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Twitter, 
-  Linkedin, 
-  Instagram, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Twitter,
+  Linkedin,
+  Instagram,
   Dribbble,
   Send
 } from "lucide-react"
@@ -20,14 +20,14 @@ export function Footer() {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     if (!email) {
       toast.error("Please enter your email address")
       return
     }
 
     setIsLoading(true)
-    
+
     try {
       const formData = new FormData()
       formData.append("access_key", "358e1cc8-fb91-4b19-bf9e-f51021f17d6f") // Get from https://web3forms.com
@@ -71,11 +71,11 @@ export function Footer() {
             <div className="flex items-center justify-center md:justify-start mb-4">
               <img src={nexonLogo} alt="NEXIN" className="h-10 w-auto" />
             </div>
-            
+
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md text-sm">
               Digital innovation that transforms visions into reality.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -93,26 +93,46 @@ export function Footer() {
               ))}
             </div>
           </div>
-          
+
           {/* Section 2: Company Details */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h4 className="font-semibold text-lg mb-4 text-white">Contact Info</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">john@nexin.agency</span>
+                <a
+                  href="mailto:muteebcheema243@gmail.com"
+                  className="text-sm hover:text-purple-400 transition"
+                >
+                  muteebcheema243@gmail.com
+                </a>
               </div>
-              {/* <div className="flex items-center gap-3 text-muted-foreground">
+              <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">+1 (555) 123-4567</span>
-              </div> */}
+                <a
+                  href="tel:+923305252173"
+                  className="text-sm hover:text-purple-400 transition"
+                >
+                  +923305252173
+                </a>
+              </div>
+
+
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-purple-400" />
-                <span className="text-sm">San Francisco, CA</span>
+                <a
+                  href="https://share.google/Um2hynnSap1GkoVh9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-purple-400 transition"
+                >
+                  Hussaini Chowk Bahawalpur
+                </a>
               </div>
+
             </div>
           </div>
-          
+
           {/* Section 3: Email Subscription */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <h4 className="font-semibold text-lg mb-4 text-white">Stay Updated</h4>
@@ -120,15 +140,15 @@ export function Footer() {
               Subscribe to our newsletter for the latest updates and insights.
             </p>
             <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 w-full max-w-sm">
-              <Input 
-                type="email" 
+              <Input
+                type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-background/50 border-border/50 text-white placeholder:text-muted-foreground flex-1"
                 required
               />
-              <Button 
+              <Button
                 type="submit"
                 size="sm"
                 disabled={isLoading}
@@ -139,7 +159,7 @@ export function Footer() {
             </form>
           </div>
         </div>
-        
+
         {/* Bottom */}
         <div className="border-t border-border/50 mt-8 pt-6 text-center">
           <p className="text-muted-foreground text-sm">

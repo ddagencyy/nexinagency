@@ -116,7 +116,7 @@ export function AwardsSection() {
           </p>
         </div>
 
-        {/* Stats Bar */}
+        /* Stats Bar */
         <div data-animate-cards className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div data-card className="group">
             <div className="text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">25+</div>

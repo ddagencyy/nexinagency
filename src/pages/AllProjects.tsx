@@ -120,7 +120,7 @@ export default function AllProjects() {
             {/* Stats */}
             <div className="grid grid-cols-3 md:grid-cols-3 gap-8 max-w-md mx-auto mb-12">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-white">50+</div>
+                <div className="text-2xl md:text-3xl font-bold text-white">80+</div>
                 <div className="text-sm text-white/70">Projects</div>
               </div>
               <div className="text-center">

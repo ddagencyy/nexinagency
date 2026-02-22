@@ -69,14 +69,26 @@ export function MobileNav() {
           </div>
           
           <div className="border-t border-border/20 pt-8">
-          <Button 
-            className="w-full font-mono text-lg py-6 relative overflow-hidden group card-click"
-            onClick={() => handleNavClick('#contact-form')}
-          >
-              <span className="absolute inset-0 bg-primary/20 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-              <span className="relative z-10">BECOME A CLIENT</span>
-            </Button>
-          </div>
+  <Button
+    className="w-full font-mono text-lg py-6 relative overflow-hidden group bg-accent text-black border-2 border-accent"
+    onClick={() =>
+      window.open(
+        "https://calendly.com/muteebcheema243/30min",
+        "_blank",
+        "noopener,noreferrer"
+      )
+    }
+  >
+    {/* Hover Overlay */}
+    <span className="absolute inset-0 bg-black transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+
+    {/* Text */}
+    <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+      Book Free Call
+    </span>
+  </Button>
+</div>
+
         </div>
       </SheetContent>
     </Sheet>

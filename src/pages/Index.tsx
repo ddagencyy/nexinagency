@@ -5,6 +5,9 @@ import { ServicesSection } from "@/components/sections/services-section"
 import { PortfolioSection } from "@/components/sections/portfolio-section"
 import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { ProjectFormSection } from "@/components/sections/project-form-section"
+import { WhyChooseNexin } from "@/components/sections/WhyChooseNexin-section"
+import { ProcessSection } from "@/components/sections/ProcessSection"
+import { FAQSection } from "@/components/sections/FAQSection"
 import { Footer } from "@/components/sections/footer"
 
 
@@ -44,6 +47,12 @@ const Index = () => {
         <div data-animate>
           <ServicesSection />
         </div>
+
+        {/* Why Choose Us Section */}
+        
+          <WhyChooseNexin />
+        
+
         
         {/* Portfolio Section */}
         <div data-animate>
@@ -55,10 +64,20 @@ const Index = () => {
           <TestimonialsSection />
         </div>
         
-        {/* Project Form Section */}
+        {/* process Section */}
         <div data-animate>
-          <ProjectFormSection />
+          <ProcessSection />
         </div>
+
+        {/* FAQS Section */}
+        <div data-animate>
+          <FAQSection />
+        </div>
+
+        {/* Project Form Section */}
+        {/* <div data-animate>
+          <ProjectFormSection />
+        </div> */}
         
         {/* Footer */}
         <Footer />
