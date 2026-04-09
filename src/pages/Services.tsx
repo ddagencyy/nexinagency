@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -208,6 +209,11 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground dark">
+      <Helmet>
+        <title>Our Services | Web Dev, UI/UX & AI Automation – Nexin Agency</title>
+        <meta name="description" content="From custom web development to UI/UX design and AI automation, Nexin Agency offers end-to-end digital solutions to grow your business. Explore our services." />
+        <link rel="canonical" href="https://nexin.agency/services" />
+      </Helmet>
       {/* Navigation */}
       <Navigation variant="page" />
 

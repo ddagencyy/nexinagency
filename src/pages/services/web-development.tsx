@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Calendar, Code, Shield, Rocket, Globe } from "lucide-react"
@@ -10,6 +11,11 @@ import { ThreeCharacter } from "@/components/three-character"
 export default function WebDevelopmentUK() {
   return (
     <main className="min-h-screen bg-background text-foreground dark">
+      <Helmet>
+        <title>Web Development Services | Nexin Agency</title>
+        <meta name="description" content="Get a fast, modern, and conversion-focused website built by experts. Nexin Agency delivers custom web development solutions tailored to your business goals." />
+        <link rel="canonical" href="https://nexin.agency/services/web-development" />
+      </Helmet>
       <Navigation variant="page" />
 
       {/* ================= HERO SECTION ================= */}
@@ -22,14 +28,14 @@ export default function WebDevelopmentUK() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <Badge variant="secondary" className="mb-6 mt-6 bg-white/10 backdrop-blur-sm text-white border-white/20">
-            UK Web Development Company
+            Web Development Company
           </Badge>
 
 
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 tracking-tight">
             Professional Web Development
             <span className="block text-gradient-primary">
-              Services in the UK
+              Services in the World
             </span>
           </h1>
 

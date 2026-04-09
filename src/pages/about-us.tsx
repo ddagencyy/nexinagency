@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -120,6 +121,11 @@ export default function AboutPage() {
 
     return (
         <div className="min-h-screen bg-background text-foreground dark">
+            <Helmet>
+        <title>About Us | Nexin Agency – Digital Agency</title>
+        <meta name="description" content="We're a passionate digital agency specializing in web development, design, and automation. Learn our story and mission." />
+        <link rel="canonical" href="https://nexin.agency/about" />
+      </Helmet>
             {/* Navigation */}
             <Navigation variant="page" />
 

@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -19,6 +20,11 @@ import { ThreeCharacter } from "@/components/three-character"
 export default function UIUXDesignUK() {
     return (
         <main className="min-h-screen bg-background text-foreground dark">
+            <Helmet>
+        <title>UI/UX Design Services | Nexin Agency</title>
+        <meta name="description" content="Create seamless digital experiences with Nexin Agency's UI/UX design services. We design intuitive, beautiful interfaces that engage users and drive conversions." />
+        <link rel="canonical" href="https://nexin.agency/services/ui-uxdesign" />
+      </Helmet>
             <Navigation variant="page" />
 
             {/* ================= HERO SECTION ================= */}

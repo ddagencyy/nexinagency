@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -19,6 +20,11 @@ import { ThreeCharacter } from "@/components/three-character"
 export default function AIAutomation() {
     return (
         <main className="min-h-screen bg-background text-foreground dark">
+            <Helmet>
+        <title>AI Automation Services | Nexin Agency</title>
+        <meta name="description" content="Save time and scale faster with AI automation from Nexin Agency. We build smart workflows and automation solutions that reduce manual work and boost efficiency." />
+        <link rel="canonical" href="https://nexin.agency/services/ai-automation" />
+      </Helmet>
             <Navigation variant="page" />
 
             {/* ================= HERO ================= */}

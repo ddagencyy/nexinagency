@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Helmet } from 'react-helmet-async';
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -113,6 +114,11 @@ export default function ContactPage() {
 
     return (
         <div className="min-h-screen bg-background text-foreground dark">
+             <Helmet>
+                    <title>Contact Us | Nexin Agency</title>
+                    <meta name="description" content="Ready to grow your business online? Get in touch with Nexin Agency for a free consultation on web development, UI/UX design, or AI automation services." />
+                    <link rel="canonical" href="https://nexin.agency/contact" />
+                  </Helmet>
             {/* Navigation */}
             <Navigation variant="page" />
 

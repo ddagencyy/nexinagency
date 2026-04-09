@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Calendar, Users } from "lucide-react"
@@ -86,6 +87,11 @@ export default function AllProjects() {
 
   return (
     <div className="min-h-screen bg-background text-foreground dark">
+       <Helmet>
+        <title>Our Portfolio | Nexin Agency</title>
+        <meta name="description" content="Explore Nexin Agency's portfolio of web development, UI/UX design, and AI automation projects. See how we've helped businesses grow online." />
+        <link rel="canonical" href="https://nexin.agency/projects" />
+      </Helmet>
       {/* Unified Navigation */}
       <Navigation variant="page" />
 

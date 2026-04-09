@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { HeroSection } from "@/components/sections/hero-section"
 import { QuoteSection } from "@/components/sections/quote-section"
 import { AboutSection } from "@/components/sections/about-section"
@@ -18,6 +19,11 @@ const Index = () => {
 
   return (
     <div ref={containerRef} className="min-h-screen bg-background text-foreground overflow-x-hidden dark">
+      <Helmet>
+        <title>Nexin Agency | Web Development & Digital Solutions</title>
+        <meta name="description" content="Transform your business with expert web development, UI/UX design, AI automation, and local SEO services. Get more customers online. Free consultation." />
+        <link rel="canonical" href="https://nexin.agency/" />
+      </Helmet>
       {/* Global 3D Background Effects */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Enhanced 3D Floating Elements */}
